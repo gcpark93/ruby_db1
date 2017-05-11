@@ -1,0 +1,24 @@
+<h1>멋쟁이 사자처럼</h1>
+<p>Let's Asciify</p>
+
+<form action="home/index2" method='get'>
+<pre><%= @output %></pre>
+
+<h2>Select Font</h2>
+<select name="input_font">
+    <option value="standard">standard</option>
+    <option value="big">big</option>
+    <option value="thin">thin</option>
+</select>
+
+<h2>이름을 입력하세요!</h2>
+<input type="text" name="input_text" placeholder="이름을 입력하세요">
+
+<h2>Email 주소를 입력하세요</h2>
+<input type="email" name="input_eamil" placeholder="email을 입력하세요">
+
+<h2>핸드폰 번호를 입력하세요</h2>
+<input type="phonenumber" name="input_phonenumber" placeholder="핸드폰 번호를 입력하세요">
+
+<input type="submit" value="Asciify!">
+</form>
