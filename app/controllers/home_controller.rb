@@ -22,5 +22,12 @@ class HomeController < ApplicationController
     
     maple3 = Artii::Base.new(font: @font)
     @output3 = maple3.asciify(@phonenumber)
+    
+    q = Question.new
+    q.name = params[:input_text]
+    q.email = params[:input_eamil]
+    q.phonenumber = params[:input_phonenumber]
+    q.save
+    @que = Question.all
   end
 end

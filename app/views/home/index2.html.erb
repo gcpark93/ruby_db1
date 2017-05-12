@@ -1,6 +1,14 @@
+<div class="index2">
 <h1>Asciify Complete!</h1>
 <p>Here's Your COOL Ascii Art</p>
 
 <pre><%= @output1 %></pre>
 <pre><%= @output2 %></pre>
 <pre><%= @output3 %></pre>
+
+<% @que.each do |db| %>
+    <p><%= db.name %></p>
+    <p><%= db.email %></p>
+    <p><%= db.phonenumber %></p>
+<% end %>
+</div>
